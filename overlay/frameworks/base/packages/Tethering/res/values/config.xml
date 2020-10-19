@@ -2,4 +2,11 @@
 <resources>
     <!-- When true, the tethering upstream network follows the current default Internet network (except when the current default network is mobile, in which case a DUN network will be used if required). -->
     <bool translatable="false" name="config_tether_upstream_automatic">true</bool>
+
+    <!-- Use the BPF offload for tethering when the kernel has support. True by default.
+         If the device doesn't want to support tether BPF offload, this should be false.
+         Note that this setting could be overridden by device config.
+    -->
+    <bool translatable="false" name="config_tether_enable_bpf_offload">false</bool>
+
 </resources>
