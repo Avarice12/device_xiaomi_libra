@@ -28,6 +28,9 @@ $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/libra/device.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := libra
 PRODUCT_NAME := nad_libra
