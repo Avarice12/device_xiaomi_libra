@@ -24,6 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, packages/apps/NusantaraParts/nadproject.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/libra/device.mk)
