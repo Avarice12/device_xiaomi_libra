@@ -21,7 +21,8 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # APEX
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/ld.config.txt:system/etc/swcodec/ld.config.txt
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ld.config.txt:system/etc/swcodec/ld.config.txt
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -88,10 +89,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/uinput-fpc.kl:system/vendor/usr/keylayout/uinput-fpc.kl \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/vendor/etc/permissions/android.hardware.fingerprint.xml
 
-PRODUCT_PACKAGES += android.hardware.biometrics.fingerprint@2.1-service
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service
 
 # Gatekeeper
-PRODUCT_PACKAGES += android.hardware.gatekeeper@1.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -161,7 +164,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/vendor/etc/permissions/handheld_core_hardware.xml
 
 # Health
-PRODUCT_PACKAGES += android.hardware.health@2.0-service
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-service
 
 # HIDL libs for legacy blobs
 PRODUCT_PACKAGES += \
@@ -169,13 +173,16 @@ PRODUCT_PACKAGES += \
     libhwbinder
 
 # IR
-PRODUCT_PACKAGES += android.hardware.ir@1.0-service.xiaomi
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service.xiaomi
 
 # IRQ
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
 
 # IRSC
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/sec_config:system/vendor/etc/sec_config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sec_config:system/vendor/etc/sec_config
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -188,10 +195,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:system/vendor/usr/keylayout/synaptics_dsx.kl
 
 # Keystore
-PRODUCT_PACKAGES += android.hardware.keymaster@3.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
 
 # Lights
-PRODUCT_PACKAGES += android.hardware.light@2.0-service.xiaomi_msm8994
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.xiaomi_msm8994
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -221,13 +230,16 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS := \
+    $(LOCAL_PATH)/overlay
 
 # Permissions
-PRODUCT_COPY_FILES += frameworks/native/data/etc/android.hardware.consumerir.xml:system/vendor/etc/permissions/android.hardware.consumerir.xml
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:system/vendor/etc/permissions/android.hardware.consumerir.xml
 
 # Power
-PRODUCT_PACKAGES += android.hardware.power-service-qti
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -240,7 +252,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.rc:system/vendor/ueventd.rc
 
 # RenderScript
-PRODUCT_PACKAGES += android.hardware.renderscript@1.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -250,10 +263,12 @@ PRODUCT_PACKAGES += \
     libxml2
 
 # Seccomp
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/seccomp/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy
 
 # Sensors
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/sensor_diag.cfg:system/etc/sensor_diag.cfg
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensor_diag.cfg:system/etc/sensor_diag.cfg
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
@@ -268,7 +283,8 @@ PRODUCT_SOONG_NAMESPACES += \
 include $(LOCAL_PATH)/system_prop.mk
 
 # Telephony
-PRODUCT_BOOT_JARS += telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 PRODUCT_PACKAGES += \
     qti-telephony-common \
@@ -280,10 +296,12 @@ PRODUCT_PACKAGES += \
     TimeKeep
 
 # USB
-PRODUCT_PACKAGES += android.hardware.usb@1.0-service.basic
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.basic
 
 # Vibrator
-PRODUCT_PACKAGES += android.hardware.vibrator@1.0-service.lineage
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-service.lineage
 
 # Wifi
 PRODUCT_COPY_FILES += \
