@@ -193,9 +193,6 @@ PRODUCT_PACKAGES += android.hardware.keymaster@3.0-impl
 # Lights
 PRODUCT_PACKAGES += android.hardware.light@2.0-service.xiaomi_msm8994
 
-# LiveDisplay
-PRODUCT_PACKAGES += vendor.lineage.livedisplay@2.0-service-legacymm
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_performance.xml:system/vendor/etc/media_codecs_performance.xml \
@@ -281,12 +278,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
-
-# Touch
-PRODUCT_PACKAGES += vendor.lineage.touch@1.0-service.libra
-
-# Trust
-PRODUCT_PACKAGES += vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += android.hardware.usb@1.0-service.basic
