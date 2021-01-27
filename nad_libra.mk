@@ -15,6 +15,7 @@
 
 # Release name
 PRODUCT_RELEASE_NAME := libra
+NAD_BUILD_TYPE := OFFICIAL
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
