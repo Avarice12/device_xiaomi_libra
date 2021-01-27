@@ -17,3 +17,7 @@ Battery | 3080 mAh (non-removable)
 Dimensions | 138.1 x 69.6 x 7.8 mm
 Shipped Android Version | 5.1.1
 Release Date | September 2015
+
+## Device Picture
+
+![Xiaomi Mi-4c](https://telegra.ph/file/47021f3985a3d3495c5d6.png "Xiaomi Mi-4c")
